@@ -12,10 +12,12 @@ public class FamilyTracker {
         Person sergio = new Person("Sergio");
         Person esther = new Person("Esther");
         Person nerea = new Person("Nerea");
+        Person ussun = new Person("Ussun");
 
         family.add(sergio);
         family.add(nerea);
         family.add(esther);
+        family.add(ussun);
 
         for (Person person:family) {
             System.out.println(person);
