@@ -3,15 +3,21 @@
  */
 public class FamilyTestData {
 
-    public static final Person sergio = new Person("Sergio");
-    public static final Person esther = new Person("Esther");
-    public static final Person nerea = new Person("Nerea");
+    public static final Person sergio = new Person("Sergio", "Garcia Belenguer");
+    public static final Person esther = new Person("Esther", "Garcia Briz");
+    public static final Person nerea = new Person("Nerea", "Garcia Garcia");
 
-    public static Family family = new Family();
+    public static FamilySet familySet = new FamilySet();
+
+    public static FamilyMap familyMap = new FamilyMap();
 
     static {
-        family.add(sergio);
-        family.add(esther);
-        family.add(nerea);
+        familySet.add(sergio);
+        familySet.add(esther);
+        familySet.add(nerea);
+
+        familyMap.add(sergio);
+        familyMap.add(esther);
+        familyMap.add(nerea);
     }
 }

@@ -12,9 +12,15 @@ public class Person {
 
     private String name;
 
+    private String surname;
 
     public Person(String name) {
         this.name = name;
+    }
+
+    public Person(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
     }
 
     public String getName() {
@@ -24,6 +30,15 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
 
     @Override
     public String toString() {
