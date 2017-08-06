@@ -18,6 +18,15 @@ public class PersonTest {
     }
 
     @Test
+    public void shouldCreatePersonWithNameAndSurname() {
+
+        Person person = new Person("name", "surname");
+
+        assertEquals(person.getName(), "name");
+        assertEquals(person.getSurname(), "surname");
+    }
+
+    @Test
     public void shouldChangeName() {
 
         Person person = new Person("name");
